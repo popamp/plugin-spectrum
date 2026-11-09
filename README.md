@@ -1,5 +1,7 @@
 # Spectrum for Popamp
 
+![Spectrum running full screen: green to pink bars, each with a fading trail above it](screenshot.png)
+
 A [Popamp](https://github.com/popamp/popamp) visualizer plug-in: bars of
 the sound's spectrum, each leaving a trail that rises and fades. The
 colours drift slowly, so the picture keeps changing on a monitor left
