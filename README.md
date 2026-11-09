@@ -15,8 +15,15 @@ player makes every GPU call, so it needs no permissions.
 
 ## Install
 
-You need a Popamp built with visualizers: Popamp Plus, or
-`cargo build --release --features visualizers`. Clone it into Popamp's
+You need Popamp Plus 0.7.0 or newer. From
+[apt.popamp.app](https://apt.popamp.app):
+
+```sh
+sudo apt install popamp-plugin-spectrum
+```
+
+Or, with any build with visualizers
+(`cargo build --release --features visualizers`), clone it into Popamp's
 plug-ins folder:
 
 ```sh
