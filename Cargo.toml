@@ -1,0 +1,27 @@
+[package]
+name = "popamp-plugin-spectrum"
+description = "Spectrum with a fading trail: a visualizer plug-in for Popamp and the example of one"
+version = "1.0.0"
+edition = "2021"
+rust-version = "1.96"
+authors = ["Gunyakov <web@gunyakov.pro>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/popamp/plugin-spectrum"
+publish = false
+
+[lib]
+# cdylib is the plug-in; rlib lets `cargo test` draw it natively.
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+extism-pdk = "1.4"
+popamp-plugin-api = { git = "https://github.com/popamp/popamp-plugin-api", branch = "main" }
+serde_json = "1"
+
+[dev-dependencies]
+popamp-visual = { git = "https://github.com/popamp/popamp-visual", branch = "main" }
+
+[profile.release]
+opt-level = "s"
+lto = true
+strip = true

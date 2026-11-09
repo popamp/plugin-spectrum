@@ -1,0 +1,6 @@
+id = "spectrum"
+name = "Spectrum"
+version = "1.0.0"
+api = "1.0"
+kind = "visual"
+description = "Bars of the sound's spectrum, leaving a trail that rises and fades while the colours slowly drift."
